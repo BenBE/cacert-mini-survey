@@ -21,15 +21,16 @@ if(isset($_POST['mails'])){
     touch("tokens/$token");
     $res = mail($mail, "Invitation to CAcert Inc. Poll",
 		"Hi,\n\n"
-		."This is a test mail to you to test this voting system.em"
+		."This is a test mail to you to test this polling system.\n"
 		."We hereby invite you as a member of CAcert Inc. (i.e. cacert-members@lists.cacert.org) to participate in ...\n"
-		."Please give your opinion using this link:\n"
-		."https://felix.dogcraft.de/vote/?token=$token\n\n"
+		."Please give your opinion once using this link:\n"
+		."https://felix.dogcraft.de/vote/?token=$token\n"
+		."the link will invalidate after use.\n\n"
 		."Polling will take place until 2016-01-12 19:00 UTC (which is 20:00 German Time).\n"
 		."Afterwards the results are available here:\n"
-		."https://felix.dogcraft.de/vote/\n\n\n"
-		."To be as transparent as possible, the two php scripts to init the poll and to perform it are available here:\n\n"
-		."https://github.com/felixdoerre/cacert-mini-survey\n\n\n\n"
+		."https://felix.dogcraft.de/vote/\n\n"
+		."To be as transparent as possible, the two php scripts to init the poll and to perform it are available here:\n"
+		."https://github.com/felixdoerre/cacert-mini-survey\n\n"
 		."Kind regards,...",
 		"From: cacert-board@lists.cacert.org\r\n"
 		."Reply-To: cacert-board@lists.cacert.org\r\n");
