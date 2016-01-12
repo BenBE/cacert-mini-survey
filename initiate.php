@@ -1,5 +1,6 @@
 <?php
-if(!isset($_GET["token"]) || $_GET["token"] != "secretpasswordhere!!"){
+include("config.php");
+if(!isset($_GET["token"]) || $_GET["token"] != $key){
   exit;
 }
 function randomString() {

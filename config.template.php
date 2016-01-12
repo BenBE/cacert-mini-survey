@@ -1,0 +1,3 @@
+<?php
+$key = "yoursecrettoken here";
+?>
