@@ -63,7 +63,7 @@ if(isset($_POST['mails'])){
     		
 		."Please give your opinion once using this link:\n"
 		."https://cacert.eu/survey/audit/?token=$token\n"
-		."the link will invalidate after use.\n\n"
+		."the link will invalidate after you cast your vote.\n\n"
 		."Polling will take place until 2016-01-28 00:00 UTC.\n"
 		."Afterwards the results are available here:\n"
 		."https://cacert.eu/survey/audit/\n\n"
