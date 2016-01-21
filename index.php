@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CAcert Audit poll</a>
+          <a class="navbar-brand" href="#">CAcert Re-Signing  survey</a>
         </div>
       </div>
     </nav>
@@ -61,7 +61,7 @@ function summary($dir, $name){
        }
        echo "</ul> Count: $y</p>";
 }
-if(time() < 1452625200){
+if(time() < 1453939200){
      if( isToken($_POST) ) {
        if( isset($_POST['n']) && !isset($_POST['y'])) {
 	 echo "<h1>Vote NO counted!</h1>";
@@ -88,8 +88,9 @@ if(time() < 1452625200){
 	 echo "<p>Invalid vote. Please try again.</p>";	 
        }
      } else if( isToken($_GET) ) {
-       echo "<h1>Hello, world!</h1>";
-       echo "<p>Here should be a text describing the exact matter that we want an opinion on.</p>";
+       echo "<h1>Dear CAcert Inc. member!</h1>";
+       echo "<p>Please give your vote until 2016-01-28 00:00 UTC.</p>";
+       echo "<p>Should CAcert perform the Root Re-sign Procedure?</p>";
        echo "<p><form method='POST' action='?'><input type='hidden' name='token' value='{$_GET['token']}'>";
        echo "  <input class='btn btn-primary btn-lg' style='margin-right: 10px' role='button' type='submit' name='y' value='YES'>";
        echo "  <input type='submit' name='n' value='NO' class='btn btn-primary btn-lg'>";
